@@ -41,4 +41,27 @@ Beware: Don't use this for actual funds. These wallets are public . Only for tes
 ### Yarn account
 Once you have a wallet , this command will show you a Qrcode of the wallet for you to send it Fund, and will check for balances on different Blockchains.
 
+### yarn verify 
+If you want to verify the contract in Etherscan, You should run the command like this: 
+```
+yarn verify -- "contract_address" --network "network name here "
+```
+Example: for deploying to mainnet
+```
+yarn verify --"0x2279B7A0a67DB372996a5FaB50D91eAA73d2eBe6" --network mainnet
+```
+
+
+### yarn surge 
+This ships your code to a Free Hosting service with a domain. (But before doing this , You must run another command which is below)
+
+```
+yarn surge
+```
+### yarn build 
+To get the Full Repository in a actual domain , you first need to run this and then run the above code yarn surge
+```
+yarn build 
+```
+
 
